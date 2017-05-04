@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmadshakaff.ceastechfleetmanagement.DashboardActivity">
+
+    <GridView
+        android:layout_width="186dp"
+        android:layout_height="127dp"
+        tools:layout_editor_absoluteY="212dp"
+        android:id="@+id/gridView"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="151dp"
+        android:layout_height="129dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="225dp" />
+
+    <GridView
+        android:layout_width="186dp"
+        android:layout_height="127dp"
+        tools:layout_editor_absoluteY="212dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/gridView"
+        android:layout_marginLeft="0dp" />
+
+    <GridView
+        android:layout_width="186dp"
+        android:layout_height="127dp"
+        tools:layout_editor_absoluteY="357dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/gridView3" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="383dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <GridView
+        android:layout_width="186dp"
+        android:layout_height="127dp"
+        tools:layout_editor_absoluteY="357dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/gridView3"
+        android:layout_marginLeft="0dp" />
+
+    <ListView
+        android:layout_width="213dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+</android.support.constraint.ConstraintLayout>
